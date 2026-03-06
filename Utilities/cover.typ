@@ -16,7 +16,7 @@
     #v(4cm)
 
     // Title
-    #text(size: 30pt, weight: "bold")[
+    #text(size: 20pt, weight: "bold")[
       #title
     ]
 
