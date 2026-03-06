@@ -5,10 +5,10 @@
 #import "Utilities/cover.typ": make-cover
 #import "./Utilities/style.typ": apply-style
 // Document metadata
-#let title = "VLM & graphe de contexte pour la prédiction d'intention piéton"
-#let subtitle = "Revue de littérature"
+#let title = "Title"
+#let subtitle = "Subtitle"
 #let short-title = "test"
-#let year = "Fevrier 2026"
+#let year = "2026"
 #let department = "Innovation Department - Quentin Balezeau"
 
 // Apply document style
@@ -35,8 +35,36 @@
 
 // Explainer section (non-numbered)
 #pagebreak()
-#include "Sections/Synthèse.typ"
+#heading(numbering: none)[Explainer]
+#include "Sections/_Explainer.typ"
+
+// Abstract section (non-numbered)
+#pagebreak()
+#heading(numbering: none)[Abstract]
+#include "Sections/0_Abstract.typ"
+
+// Main sections (numbered)
+#pagebreak()
+#include "Sections/1_Introduction.typ"
+
+#pagebreak()
+#include "Sections/2_Problem.typ"
+
+#pagebreak()
+#include "Sections/3_SoTA.typ"
+
+#pagebreak()
+#include "Sections/4_Operations.typ"
+
+#pagebreak()
+#include "Sections/5_Conclusions.typ"
 
 // Bibliography
 #pagebreak()
+#heading(numbering: none)[References]
 #bibliography("Utilities/Bibliography.bib", style: "ieee")
+
+// Glossary
+#pagebreak()
+#heading(numbering: none)[Glossary]
+#include "Utilities/Glossary.typ"
